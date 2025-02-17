@@ -76,7 +76,7 @@
     <form method="post" action="https://test.ipg-online.com/connect/gateway/processing">
 
         <?php foreach($fields as $key => $value) { ?>
-        <input type="text" disabled name="<?=$key?>" value="<?=$value?>"><br>
+        <input type="text" disabled name="<?=$key?>" id=<?=$key?> value="<?=$value?>"><br>
 
         <?php }?>
         <br>
@@ -90,8 +90,8 @@
     <h2>Combined fields</h2>
     <textarea style="width: 800px; height: 100px;" disabled><?=sprintf("%s", $stringToHash);?></textarea>
     <br>
-    <h2>Shared secret</h2>
-    <textarea style="width: 800px; height: 30px;" disabled><?=sprintf("%s", $sharedSecret);?></textarea>
+    <!-- <h2>Shared secret</h2> -->
+    <!-- <textarea style="width: 800px; height: 30px;" disabled><?=sprintf("%s", $sharedSecret);?></textarea> -->
     <h2>Extended hash</h2>
     <textarea style="width: 800px; height: 30px;" disabled><?=sprintf("%s", $hashExtended);?></textarea>
 
