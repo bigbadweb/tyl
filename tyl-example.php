@@ -72,10 +72,10 @@
     <h2>Payment Form</h2>
     <!-- <pre><?=print_r($fields, 1)?></pre> -->
 
-    <form method="post" action="https://test.ipg-online.com/connect/gateway/processing">
+    <form method="POST" action="https://test.ipg-online.com/connect/gateway/processing">
 
         <?php foreach($fields as $key => $value) { ?>
-        <input type="text" disabled name="<?=$key?>" id=<?=$key?> value="<?=$value?>"><br>
+        <input type="text" name="<?=$key?>" id=<?=$key?> value="<?=$value?>"><br>
 
         <?php }?>
         <br>
