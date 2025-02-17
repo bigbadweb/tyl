@@ -2,10 +2,9 @@
 
   include("env.php");
 
-
   $sharedSecret = getenv("TYL_SECRET");
   $storename = getenv("TYL_STORE");
-  $baseURL =  getenv("BASE_URL") || "http://localhost:8080";
+  $baseURL =  getenv("BASE_URL");
 
   $timezone= "Europe/London";
   $txntype= "sale";
